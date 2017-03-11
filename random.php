@@ -1,0 +1,1 @@
+<?php include("warren.php"); ?>{"quote":"<?php echo ellis_complete_phrase(); ?>"}

@@ -1,0 +1,158 @@
+/*
+	Styles for TalkLikeWarrenEllis.com
+	by Scott Vandehey - spaceninja.com
+*/
+
+
+
+/* Universal Rules -------------------------------------------------- */
+body {
+	margin: 2.5em 3em;
+	padding: 0;
+	background: #fff;
+	color: #333;
+	font: 100%/1.5 Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ahem, hr { display: none !important; }
+img { border: none; }
+.floatleft, .alignleft { float: left; margin: 0 1em 1em 0; }
+.floatright, .alignright { float: right; margin: 0 0 1em 1em; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.clearboth { clear: both; }
+
+/* Header Styles -------------------------------------------------- */
+.logo {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #09c;
+	margin: 0;
+	line-height: 1;
+}
+.logo small {
+	font-weight: normal;
+	color: #999;
+}
+
+/* Content -------------------------------------------------- */
+a, a:link, a:visited {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+a:hover, a:focus, a:active {
+	color: #c00;
+	border-bottom-width: 2px;
+}
+sup { /* to prevent gaps in paragraph layouts, we'll switch back to regular v-align and shunt it up with pos:rel */
+	vertical-align: baseline;
+	position: relative;
+	bottom: .33em;
+}
+acronym, abbr, .info {
+	border-bottom: 1px dotted #333;
+	cursor: help;
+}
+h1, h2 ,h3, h4 {
+	line-height: 1.25;
+}
+h1 {
+	font-size: 5em;
+	font-weight: normal;
+	margin: .15em 0 .33em;
+	text-rendering: optimizeLegibility;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.75em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5, h6 {
+	font-size: 1.25em;
+}
+p, table, ul, ol, dl {
+	margin: .25em 0 1em;
+}
+table {
+	width: 100%;
+}
+th, td {
+	padding: .5em .66em;
+	line-height: 1.1;
+	vertical-align: top;
+	border-bottom: 1px solid #ddd;
+}
+th {
+	text-align: left;
+	vertical-align: bottom;
+}
+ul, ol {
+	padding-left: 0;
+}
+ul ul,
+ol ol {
+	margin: 0;
+}
+li {
+	margin: .25em 0 .66em 1.5em;
+	padding-left: 0;
+}
+ul li {
+}
+ol li {
+	margin-left: 1.75em;
+}
+
+/* social networks */
+.sharewith,
+.sharewith li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+}
+.sharewith li a {
+	display: block;
+	float: left;
+	line-height: 48px;
+	padding-left: 22px;
+	margin: 0 1.33em 1em 0;
+	background: transparent url("images/favorite.png") no-repeat left center;
+	border: none;
+	color: #09c; /* cyan */
+	font-weight: bold;
+}
+.sharewith li a:hover, .sharewith li a:focus {
+	outline: none;
+	color: #c00;
+}
+.sharewith .twitter a {
+	background-image: url("images/twitter.png");
+	line-height: 48px;
+	padding-left: 54px;
+	font-size: 1.33em;
+}
+.sharewith .email a {
+	background-image: url("images/email.png");
+}
+.sharewith .delicious a {
+	background-image: url("images/delicious.png");
+}
+.sharewith .facebook a {
+	background-image: url("images/facebook.png");
+}
+.sharewith .digg a {
+	background-image: url("images/digg.png");
+}
+.sharewith .speech a {
+	background-image: url("images/play.png");
+}
+
+/* Footer -------------------------------------------------- */
+#footer {
+	clear: both;
+	width: 675px;
+}
